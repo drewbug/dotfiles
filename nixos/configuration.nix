@@ -71,13 +71,10 @@
   environment.systemPackages = with pkgs; [
     acpi
     acpid
-    man_db
-    which
 
     chromiumDev
     dmenu
     dwm
-    fish
     git
     slock
     st
@@ -188,6 +185,5 @@
     extraGroups = [ "wheel" ];
     createHome = true;
     home = "/home/bernerd";
-    shell = "/run/current-system/sw/bin/fish";
   };
 }
