@@ -28,7 +28,7 @@
 
   boot.initrd.luks.devices = [
     {
-      name = "rootfs"; device = "/dev/sda5"; preLVM = true;
+      name = "rootfs"; device = "/dev/sda2"; preLVM = true;
     }
   ];
 
@@ -40,8 +40,7 @@
 
   boot.loader.grub.device = "/dev/sda";
 
-  # networking.hostName = "nixos"; # Define your hostname.
-  networking.hostId = "f83ab886";
+  networking.hostName = "Emma-Air"; # Define your hostname.
   networking.wireless.enable = true;  # Enables wireless.
 
   # Select internationalisation properties.
@@ -99,7 +98,7 @@
       desktopManagerHandlesLidAndPower = false;
 
       slim = {
-        defaultUser = "bernerd";
+        defaultUser = "drew";
         enable = true;
       };
     };
@@ -178,12 +177,10 @@
 
   time.timeZone = "America/Los_Angeles";
 
-  users.extraUsers.bernerd = {
-    name = "bernerd";
-    group = "users";
-    uid = 1000;
+  users.extraUsers.drew = {
+    isNormalUser = true;
+    home = "/home/drew";
+    description = "Drew Carey Buglione";
     extraGroups = [ "wheel" ];
-    createHome = true;
-    home = "/home/bernerd";
   };
 }

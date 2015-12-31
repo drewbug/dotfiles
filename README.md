@@ -9,7 +9,7 @@ sudo nixos-rebuild switch
 nix-env -f profile.nix -i '*'
 
 # install dotfiles
-env RCRC=~/src/github.com/bernerdschaefer/dotfiles/rcrc rcup
+env RCRC=~/src/dotfiles/rcrc rcup
 ```
 
 ### Manage vim plugins

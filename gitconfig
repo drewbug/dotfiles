@@ -1,17 +1,3 @@
 [user]
-        name = Bernerd Schaefer
-        email = bj.schaefer@gmail.com
-[credential]
-        helper = store
-[hub]
-        protocol = https
-[merge]
-        ff = only
-[push]
-        default = current
-[color]
-        ui = true
-[core]
-        excludesfile = ~/.gitignore_global
-[rebase]
-        autosquash = true
+        name = Drew Carey Buglione
+        email = drew@drewb.ug
