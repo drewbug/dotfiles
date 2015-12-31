@@ -90,15 +90,6 @@
 
   security.setuidPrograms = [ "slock" ];
 
-  sound = {
-    enable = true;
-    # card 0 is HDMI, card one is PCH (i.e., the actual sound card)
-    extraConfig = ''
-      defaults.pcm.card 1
-      defaults.ctl.card 1
-    '';
-  };
-
   # Enable acpi
   services.acpid.enable = true;
 
