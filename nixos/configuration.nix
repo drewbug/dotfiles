@@ -102,8 +102,6 @@
   # Enable acpi
   services.acpid.enable = true;
 
-  services.virtualboxHost.enable = true;
-
   # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
